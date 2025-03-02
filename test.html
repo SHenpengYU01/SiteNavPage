@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logos</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-image: url('background.jpg'); /* 背景图片 */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            margin: 0;
+            height: 100vh;
+            position: relative;
+        }
+
+        /* 创建背景虚化层 */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6); /* 暗色背景 (黑色半透明) */
+            filter: blur(10px); /* 背景虚化效果 */
+            z-index: -1;
+        }
+
+        /* 内容区域 */
+        .content {
+            position: relative;
+            z-index: 1;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.6); /* 使文字清晰 */
+            border-radius: 10px;
+        }
+
+        /* 欢迎部分 */
+        .welcome-text {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        /* 卡片式矩形框样式 */
+        .card-main {
+            font-size: 20px;
+            display: block; /* 使a标签成为块级元素，充满整个矩形区域 */
+            background-color: rgba(199, 188, 210, 0.8); /* 背景色，稍微透明 */
+            border: 1px solid #ffcc00; /* 边框 */
+            padding: 50px; /* 内边距 */
+            border-radius: 20px; /* 圆角 */
+            text-decoration: none; /* 去掉链接下划线 */
+            color: #333; /* 默认文字颜色 */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* 平滑过渡效果 */
+            text-align: center; /* 中心对齐文字 */
+        }
+
+        /* 卡片悬停效果 */
+        .card-main:hover {
+            transform: scale(1.05); /* 鼠标悬停时放大 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 悬停时的阴影效果 */
+        }
+
+        /* 用flexbox布局卡片 */
+        .card-container {
+            display: flex;
+            justify-content: space-between; /* 卡片之间保持间隔 */
+            gap: 10px; /* 卡片之间的间隔 */
+            flex-wrap: wrap; /* 当屏幕较窄时，卡片自动换行 */
+            margin-top: 30px;
+        }
+
+        /* 导航链接 */
+        .nav-links {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin: 15px 0;
+        }
+
+        .nav-links a {
+            font-size: 20px;
+            text-decoration: none;
+            color: #ffcc00; /* 高亮链接颜色 */
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+            color: #ff9900; /* 鼠标悬停时颜色变化 */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 背景虚化层 -->
+    <div class="overlay"></div>
+
+    <!-- 内容区域 -->
+    <div class="content">
+        <!-- 欢迎文字 -->
+        <div class="welcome-text">
+            <h1>Welcome</h1>
+            <p>请选择你要访问的子站点：</p>
+        </div>
+
+        <!-- 使用flexbox布局水平排列卡片 -->
+        <div class="card-container">
+            <!-- 第一部分导航 - 卡片 -->
+            <a href="https://blog.mythlogos.top" class="card-main">
+                <div class="nav-links">
+                    <li><span>Blog</span></li>
+                    <li><span>——Simple thoughts</span></li>
+                </div>
+            </a>
+        
+            <!-- 第二部分导航 - 卡片 -->
+            <a href="https://note.mythlogos.top" class="card-main">
+                <div class="nav-links">
+                    <li><span>Note</span></li>
+                    <li><span>——Useful knowledge</span></li>
+        
+                </div>
+            </a>
+    </div>
+    </div>
+</body>
+</html>

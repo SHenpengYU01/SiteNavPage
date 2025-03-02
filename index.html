@@ -1,41 +1,71 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CD4J3WLSY5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-CD4J3WLSY5');
+    </script>
+    
+    <!-- SEO Meta 标签 -->
+    <!-- <meta name="description" content=""> -->
+    <!-- <meta name="keywords" content=""> -->
+    <!-- <meta name="author" content=""> -->
+    
+    <!-- 网站图标 -->
+    <link rel="icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
     <title>Mysterious Logos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            margin-bottom: 30px;
-        }
-        .nav-links {
-            list-style-type: none;
-            padding: 0;
-        }
-        .nav-links li {
-            margin: 10px 0;
-        }
-        .nav-links a {
-            font-size: 20px;
-            text-decoration: none;
-            color: #007bff;
-        }
-        .nav-links a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>This is the navigation page for my sites</h1>
-    <p>Sites are listed below</p>
-    <ul class="nav-links">
-        <li><a href="https://blog.mythlogos.top">Blog: Simple thoughts</a></li>
-        <li><a href="https://note.mythlogos.top">Note: Useful knowledge</a></li>
-    </ul>
+    <div class="background">
+        <div class="waterfall-column"></div>
+        <div class="waterfall-column"></div>
+        <div class="waterfall-column"></div>
+        <div class="waterfall-column"></div>
+    </div>
+
+    <div class="container">
+        <main>
+            <div class="greeting">
+                <!-- <div class="wave-icon"></div> -->
+                <h1>Welcome to the world of logos</h1>
+                <!-- <h2>欢迎来到</h2> -->
+                <p class="subtitle">God bless you</p>
+            </div>
+
+            <div class="cards">
+                <a href="https://blog.mythlogos.top" class="card">
+                    <div class="card-main">
+                        <div class="card-content">
+                            <h3>Blog</h3>
+                            <p>This is the blog</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://note.mythlogos.top" class="card">
+                    <div class="card-main">
+                        <div class="card-content">
+                            <h3>Note</h3>
+                            <p>This is the note</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </main>
+
+        <!-- <div class="sphere-bg"></div> -->
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
